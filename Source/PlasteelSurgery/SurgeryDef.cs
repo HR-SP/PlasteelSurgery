@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,6 +7,9 @@ using Verse;
 
 namespace PlasteelSurgery
 {
-    public class SurgeryDef : RecipeDef
-    {    }
+    public class SurgeryDef : DefModExtension
+    {
+        public BodyTypeDef bodyType;
+        public Gender gender = 0;
+    }
 }
